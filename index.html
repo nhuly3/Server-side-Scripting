@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Search</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="search-panel">
+      <h1>Stock Search</h1>
+      <form id="search-form">
+        <label for="ticker-input">Enter Stock Ticker Symbol <span class="required">*</span></label>
+        <input type="text" id="ticker-input" name="ticker" required placeholder="e.g. AAPL" />
+        <div class="buttons">
+          <button type="submit">Search</button>
+          <button type="button" id="clear-btn">Clear</button>
+        </div>
+        <div id="error-message" class="error-message"></div>
+      </form>
+    </div>
+    <hr />
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="outlook">Company Outlook</button>
+      <button class="tab-btn" data-tab="summary">Stock Summary</button>
+      <button class="tab-btn" data-tab="history">Search History</button>
+    </div>
+    <div id="tab-content" class="tab-content"></div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
