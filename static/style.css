@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #5D4E8E;
+}
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+.search-panel {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+.search-panel h1 {
+  margin: 0 0 10px;
+}
+#search-form label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+#ticker-input {
+  padding: 5px 10px;
+  width: 200px;
+  font-size: 1em;
+}
+.buttons {
+  margin-top: 10px;
+}
+button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e6e6e6;
+}
+.error-message {
+  color: #b22222;
+  margin-top: 10px;
+  font-weight: bold;
+}
+hr {
+  border: none;
+  border-top: 2px solid #4a3f80;
+  margin: 0;
+}
+.tabs {
+  display: flex;
+  background-color: #e0e0e0;
+}
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tab-btn.active {
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.tab-content {
+  background-color: #fff;
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  vertical-align: top;
+}
+.desc-cell {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.change-positive {
+  color: green;
+}
+.change-negative {
+  color: red;
+}
